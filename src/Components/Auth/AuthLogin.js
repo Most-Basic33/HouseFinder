@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { getUser } from '../../ducks/reducer'
 import { Link } from 'react-router-dom'
 import './Auth.css'
-import axios from 'axios'
+
 
 
 const AuthLogin = (props) => {
@@ -14,8 +14,7 @@ const AuthLogin = (props) => {
 
   const login = () => {
     let body = { email, password }
-//service.login(body)
-axios.post(`/api/login`,body)
+service.login(body)
       .then(res => {
         // console.log(res.data)
         setUser(res.data)
