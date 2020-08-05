@@ -1,0 +1,103 @@
+#Login__parent {
+    width: 100%;
+    height: calc(100vh - 100px);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./bishopHome.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+  }
+  #top{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: '/House.jpeg';
+    background-color:#8AEA92;
+  }
+  #big{
+    font-size: 40px;
+    font-family: cursive;
+    color: #191a19;
+    box-shadow: 21px 27px 20px 0px rgba(0,0,0,0.75);
+
+  }
+  #Login__child {
+    opacity: .85;
+    position: relative;
+    bottom:25px;
+    margin: auto;
+    right:0px;
+    width: 350px;
+    height: 350px;
+    box-sizing: border-box;
+    border-radius: 27px;
+    background-color: #49cf7c;
+    box-shadow: 21px 27px 20px 0px rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Login_btn{
+    cursor: pointer;
+    background-image: linear-gradient(to right, #FF70A6 , #FF9770, #FFD670, #E9FF70);
+    color: black;
+    border: 0px solid white;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+
+  .Login_btn button:hover{
+    background-color: transparent;
+    color:red;
+  }
+
+
+  .Login__input {
+    border: 3px solid ridge;
+    border: 1px solid black;
+    width: 200px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 18px;
+  }
+  
+  .Login__input:focus { 
+    border-bottom: 1px solid skyblue;
+  }
+  #text{
+    font-family: cursive;
+    text-decoration: underline;
+     font-size: larger;
+  }
+  .Login__btn {
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    font-size: 12px;
+    box-sizing: border-box;
+    width: 60px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+  }
+  
+  #Login__GuestLink {
+    margin-top: 30px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  #Login__loginBtn {
+    background-color: skyblue;
+    color: white;
+  }

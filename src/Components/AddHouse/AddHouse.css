@@ -1,0 +1,64 @@
+  form{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+     
+}
+.form-box{
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+}
+#submit-photo{
+    background-color: #8AEA92;
+    font-weight: bold;
+    font-size: large;
+    position: relative;
+    bottom: 75px;
+}
+#drop{
+    position: relative;
+    top: 200px;
+}
+#drop{
+    align-self: center;
+    border: black 3px solid;
+    height:300px;
+    width: 200px;
+}
+#legend{
+    position: relative;
+}
+#complete{
+    background-color: #8AEA92;
+    position: relative;
+    top: 555px;
+    left:325px;
+    font-weight: bold;
+    font-size: large;
+}
+#name{
+    position: absolute;
+    right:200px;
+    top:100px
+}
+#field{
+    position: relative;
+    top: 200px;
+}
+#butt{
+    background-color: #FEC2C2;
+    font-weight: bold;
+    font-size: large;
+}
+#link{
+    
+    top:72px;
+    position: relative;
+    left:300px;
+}
+#name1{
+    top:100px;
+    position: relative;
+    right: 300px;
+}  

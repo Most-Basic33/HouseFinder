@@ -1,0 +1,34 @@
+#onMap{
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    left:50%;
+    font-family: cursive;
+}
+.search_div{
+    position: absolute;
+    top: 1rem;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 400px;
+    z-index: 10;
+    left: 35%;
+     padding: 0.25rem;
+      
+     
+}
+.locate_button{
+    position: absolute;
+    top: 1rem;
+    transform: translateX(-50%);
+    width: fit-content;
+    max-width: 400px;
+    z-index: 10;
+   right: 15%;
+     padding: 0.25rem;
+}
+
+ 

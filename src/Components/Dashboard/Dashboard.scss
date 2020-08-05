@@ -1,0 +1,21 @@
+@import "../../../styles/mixins";
+.mapped {
+    @include ghost(space-evenly);
+    margin-top: 10px;
+    float: right;
+    background-color: #FFB30F;
+    font-family: sans-serif;
+    position: relative;
+    width: 95%;
+    margin-right:15px;
+    border: 3px solid black;
+    height:20vh;
+    box-shadow: 05px 13px 10px 0px rgba(0,0,0,0.75);
+}
+@global(.Toastify__toast--default){
+    background:#FFB30F
+}
+
+.Toastify__toast--default {
+    background:#FFB30F
+}

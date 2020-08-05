@@ -1,0 +1,5 @@
+@mixin ghost($placeholder) {
+    display: flex;
+    justify-content:  $placeholder;
+    align-items: center;
+}

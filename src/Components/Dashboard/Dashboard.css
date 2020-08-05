@@ -1,0 +1,141 @@
+    #buttons{
+       
+    background-color: #FEC2C2;
+    font-weight: bold;
+    font-size: small; 
+    border-radius: 50%;
+    
+ }
+ #butty{
+     display: flex;
+     flex-direction: column;
+     align-items:center;
+     justify-content: flex-start;
+ }
+ .header-2{
+     margin-left: 17px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 95%;
+    font-family: cursive;
+    font-size: 3vh;
+    color: white;
+}
+ 
+#photo{
+    padding-right: 10px;
+
+}
+#cart{
+    position: relative;
+    bottom: 50px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: small;
+    background-color: #8AEA92; 
+    border-radius: 50%; 
+    height: 45px;
+     
+}
+#map-div{
+    display: flex;
+    justify-content: flex-start;
+    width: 23%;
+    height: 40px;
+    align-items: center;
+    margin-left: 8px;
+    
+}
+#header-slogan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 53%;
+    height: 40px;
+}
+#link-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+width: 24%;
+height: 40px;
+}
+
+#button1{
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    font-size: large;
+    background-color: #8AEA92;
+}
+   .content{
+    /* background-color:#E6AF2E;
+    width: fit-content; */
+    margin: auto;
+    box-shadow: 5px 5px 5px 0px rgba(36, 36, 36, 0.75);
+
+}    
+.user{
+    font-weight: bold;
+    font-size: large;
+    background-color: #8AEA92;
+     
+}
+ 
+#doughnut{
+    color:white
+}
+    .mapped1{
+        display: flex;
+        justify-content: space-between;
+    width: fit-content;
+    border: 3px solid black;
+     
+    font-family: sans-serif;;
+    
+    font-size:30px;
+    background-color: #e6af2e;
+    }   
+
+    .dash-box {
+        height: fit-content;
+        width: 75vw;
+        background-color: #01295F ;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        float: right;
+        justify-content: space-evenly;
+
+    }
+
+    .mapped {
+        margin-top: 10px;
+        display: flex;
+        float: right;
+        justify-content: space-evenly;
+        background-color: #FFB30F;
+        align-items: center;
+        font-family: sans-serif;
+        position: relative;
+        width: 95%;
+        margin-right:15px;
+        border: 3px solid black;
+        height:20vh;
+        box-shadow: 05px 13px 10px 0px rgba(0,0,0,0.75);
+
+         
+    }
+    #butty{
+width: 10%;
+    }
+    .list1{
+width: 30%;
+    }
+    .list2{
+width: 20%;
+    }
+    .rents{
+width: 10%;
+    }
