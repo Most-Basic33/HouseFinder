@@ -1,6 +1,6 @@
 require('dotenv').config()
 const express = require('express'),
-path = require('path')
+path = require('path'),
   ctrl = require('./controller'),
   auth = require('./authController'),
   extra = require(`./extraController`),
