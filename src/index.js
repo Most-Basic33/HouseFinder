@@ -6,14 +6,14 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux'
 import store from './ducks/store'
 import { HashRouter, BrowserRouter } from 'react-router-dom';
-const Router = process.env.NODE_ENV === 'development' ? HashRouter : BrowserRouter
+//const Router = process.env.NODE_ENV === 'development' ? HashRouter : BrowserRouter
 
 ReactDOM.render(
-  <Router>
+  <HashRouter>
   <Provider store={store}>
     <App />
   </Provider>
-  </Router>,
+  </HashRouter>,
   document.getElementById('root')
 );
 
