@@ -13,7 +13,8 @@ const AuthLogin = (props) => {
 
   const login = () => {
     let body = { email, password }
-    service.login(body)
+//service.login(body)
+axios.post(`/api/login`,body)
       .then(res => {
         // console.log(res.data)
         setUser(res.data)
