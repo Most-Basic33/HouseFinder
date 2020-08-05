@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { getUser } from '../../ducks/reducer'
 import { Link } from 'react-router-dom'
 import './Auth.css'
+import axios from 'axios'
 
 
 const AuthLogin = (props) => {
