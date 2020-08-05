@@ -83,9 +83,9 @@ app.get('/sign-s3', (req, res) => {
 //Hosting
 app.use(express.static(__dirname + '/../build'))
 
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, '../build/index.html'))
-// })
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../build/index.html'))
+})
 
 //auth
 app.post('/api/register', auth.register)
