@@ -79,8 +79,7 @@ const Header = (props) => {
     labels: [
        
         'Monthly Income',
-        'Remainder'
-       
+        'Remainder',   
     ],
     datasets: [{
         data: [income,remainingMoney],
@@ -92,7 +91,14 @@ const Header = (props) => {
             '#C82299',
             '#72C999',
         ]
-    }]
+    }],
+    options: {
+    legend: {
+      labels: {
+        fontColor: 'red'
+      }
+    }
+  }
 }} />
          
         </div>
