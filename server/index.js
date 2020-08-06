@@ -13,11 +13,13 @@ path = require('path'),
     SESSION_SECRET,
     S3_BUCKET,
     AWS_ACCESS_KEY_ID,
-    AWS_SECRET_ACCESS_KEY
+    AWS_SECRET_ACCESS_KEY,
+    NODE_ENV
   } = process.env,
   massive = require('massive'),
   app = express()
 
+  console.log(process.env.NODE_ENV)
 
 app.use(cors({
   origin: 'http://localhost:3000',
@@ -80,12 +82,6 @@ app.get('/sign-s3', (req, res) => {
   });
 });
 
-//Hosting
-app.use(express.static(__dirname + '/../build'))
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../build/index.html'))
-})
 
 //auth
 app.post('/api/register', auth.register)
@@ -114,3 +110,13 @@ app.delete(`/api/users/:id`, verify.user, ctrl.deleteUser)
 app.get(`/api/users/:name`, verify.user, ctrl.findUser)
 
 app.listen(SERVER_PORT, () => console.log(`Listening  to smooth sounds of ${SERVER_PORT}`))
+
+//Hosting
+if(NODE_ENV === 'production') {
+  app.use(express.static(__dirname + '/../build'))
+  
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../build/index.html'))
+  })
+  
+}
