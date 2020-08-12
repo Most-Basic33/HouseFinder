@@ -20,11 +20,56 @@
   -webkit-box-shadow: 5px 13px 10px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 5px 13px 10px 0px rgba(0, 0, 0, 0.75);
 }
-
-@global (.Toastify__toast--default) {
-  background: #FFB30F;
+#mappy{
+  border-radius: 50%;
+font-weight: 700;
+background-color: #8aea92;
+height: 45px;
+margin: 5px;
 }
+#cart{
+border-radius: 50%;
+font-weight: 700;
+background-color: #8aea92;
+height: 45px;
+margin: 5px;
 
+}
+/* .content{
+  margin-right:.5% ;
+  width: 75vw;
+  float: right;
+} */
+#header-slogan{
+  justify-content: center;
+  width: 53%;
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+ .dash-box{
+   align-items: center;
+   display: flex;
+   float: right;
+   justify-content: space-evenly;
+   height: fit-content;
+   width: 75vw;
+   background-color: #01295f;
+   flex-direction: column;
+ }
+.header-2{
+   
+  font-family: cursive;
+  font-size: 3vh;
+  color: #fff;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+#map-div{
+  align-self: start;
+  
+}
 .Toastify__toast--default {
   background: #FFB30F;
 }

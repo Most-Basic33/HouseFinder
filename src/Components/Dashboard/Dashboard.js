@@ -110,9 +110,7 @@ const Dashboard = (props) => {
 
 
  
-        //()=>updatePrice(home.id)
-//console.log(edit)
-
+     
 const setModal=(id, e)=>{
     e.stopPropagation()
     setModalOpen(id)
@@ -167,7 +165,7 @@ const setModal=(id, e)=>{
         <div className='dash-box'>
             <header className='header-2'>
             <div id='map-div'>
-            <Link to='/map'> <button>Maps</button></Link>
+            <Link to='/map'> <button id='mappy' >View Maps</button></Link>
             </div>
             <div id='header-slogan' >
             Find Your Home Today User:{props.user.id}
