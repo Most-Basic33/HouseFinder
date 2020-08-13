@@ -14,7 +14,7 @@ module.exports = {
         to: EMAIL,
         from: EMAIL, // Use the email address or domain you verified above
         subject: `${subject}`,
-        text: `${text}`,
+        text:  text,
         html: `<strong>${text}</strong>`,
       };
       try {

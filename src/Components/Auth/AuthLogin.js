@@ -12,7 +12,8 @@ const AuthLogin = (props) => {
   const [password, setPassword] = useState('')
   const [, setUser] = useState('')
 
-  const login = () => {
+  const login = (e) => {
+    e.preventDefault()
     let body = { email, password }
 service.login(body)
       .then(res => {
@@ -49,7 +50,7 @@ service.login(body)
               placeholder="Password"
               onChange={(e) => setPassword(e.target.value)}
             />
-            <button className='Login__btn' onClick={login} >Login</button>
+            <button className='Login__btn' onClick={(e)=>login(e)} >Login</button>
             <br></br>
             <Link to='/register'> <button className='Login_btn' >Register Now!</button></Link>
             <br></br>
